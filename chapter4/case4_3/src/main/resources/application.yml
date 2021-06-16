@@ -1,0 +1,12 @@
+spring:
+  servlet:
+    multipart:
+      enabled: true # 表示是否开启文件上传支持，默认为 true
+      file-size-threshold: 0 # 表示文件写入磁盘的阈值，默认为 0
+      location: D:\\temp # 表示上传文件的临时保存位置
+      max-file-size: 1MB # 表示上传的单个文件的最大大小，默认为 1MB
+      max-request-size: 10MB # 表示多文件上传时文件的总大小，默认为 10MB
+      resolve-lazily: false # 表示文件是否延迟解析，默认为 false
+
+server:
+  port: 8081
